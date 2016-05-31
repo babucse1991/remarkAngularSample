@@ -1,0 +1,12 @@
+{
+  "name": "node-token-authentication",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.4.2",
+    "express": "",
+    "jsonwebtoken": "^5.7.0",
+    "morgan": "^1.7.0",
+    "ejs": "^1.0.0",
+    "multer": "~0.1.6"
+  }
+}

@@ -1,0 +1,11 @@
+angular.module('sampleApp', 
+		['ngRoute', 
+		 'appRoutes',
+		 'ngAnimate', 
+		 'ui.tinymce', 
+		 'ui.bootstrap',
+		 'ui.bootstrap.tpls', 
+		 'MainCtrl',
+		 'LogInCtrl',
+		 'DemoCtrl']
+);
