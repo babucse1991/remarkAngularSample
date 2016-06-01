@@ -3,5 +3,5 @@
 */
 angular.module('LogInCtrl', []).controller('LogInCtrlController', function() {
 	
-	alert("aaaa");
+	
 });

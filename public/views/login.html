@@ -1,46 +1,86 @@
+<div class="page-login layout-full page-dark">
+  
+  <div class="page animsition vertical-align text-center" data-animsition-in="fade-in"
+  data-animsition-out="fade-out">>
+    <div class="page-content vertical-align-middle">
+      <div class="brand">
+        <img class="brand-img" src="http://getbootstrapadmin.com/remark/center/assets/images/logo.png" alt="...">
+        <h2 class="brand-text">Remark</h2>
+      </div>
+      <p>Sign into your pages account</p>
+      <form method="post" action="login.html">
+        <div class="form-group">
+          <label class="sr-only" for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputPassword">Password</label>
+          <input type="password" class="form-control" id="inputPassword" name="password"
+          placeholder="Password">
+        </div>
+        <div class="form-group clearfix">
+          <div class="checkbox-custom checkbox-inline checkbox-primary pull-left">
+            <input type="checkbox" id="inputCheckbox" name="remember">
+            <label for="inputCheckbox">Remember me</label>
+          </div>
+          <a class="pull-right" href="forgot-password.html">Forgot password?</a>
+        </div>
+        <a href="/#demo"><button type="submit" class="btn btn-primary btn-block">Sign in</button></a>
+      </form>
+      <p>Still no account? Please go to <a href="register.html">Register</a></p>
+
+      <footer class="page-copyright page-copyright-inverse">
+        <p>WEBSITE BY amazingSurge</p>
+        <p>© 2016. All RIGHT RESERVED.</p>
+        <div class="social">
+          <a href="javascript:void(0)">
+            <i class="icon bd-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="javascript:void(0)">
+            <i class="icon bd-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="javascript:void(0)">
+            <i class="icon bd-dribbble" aria-hidden="true"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  </div>
+  
+  <script>
+    (function(document, window, $) {
+      'use strict';
+
+      var Site = window.Site;
+      $(document).ready(function() {
+        Site.run();
+      });
+    })(document, window, jQuery);
+  </script>
 
 
-	<div class="pen-title">
-		
-	</div>
-	<!-- Form Module-->
-	<div class="module form-module">
-		<div class="toggle">
-			<i class="fa fa-times fa-pencil"></i>
-			<div class="tooltip">Click Me</div>
-		</div>
-		<div class="form">
-			<h2>Login to your account</h2>
-			<form>
-				<input type="text" placeholder="Username" /> <input type="password"
-					placeholder="Password" />
-			<a href="/#demo" class="button">Login</a>
-			</form>
-		</div>
-		<div class="form">
-			<h2>Create an account</h2>
-			<form>
-				<input type="text" placeholder="Username" /> <input type="password"
-					placeholder="Password" /> <input type="email"
-					placeholder="Email Address" /> <input type="tel"
-					placeholder="Phone Number" />
-				<button>Register</button>
-			</form>
-		</div>
-		<div class="cta">
-			<a href="">Forgot your password?</a>
-		</div>
-	</div>
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js',
+      'ga');
 
-<script>// Toggle Function
-$('.toggle').click(function(){
-	  // Switches the Icon
-	  $(this).children('i').toggleClass('fa-pencil');
-	  // Switches the forms  
-	  $('.form').animate({
-	    height: "toggle",
-	    'padding-top': 'toggle',
-	    'padding-bottom': 'toggle',
-	    opacity: "toggle"
-	  }, "slow");
-	});</script>
+    ga('create', 'UA-65522665-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+ 
+  
